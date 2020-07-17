@@ -1,0 +1,46 @@
+actions:
+  Doudou: 23s
+  Chanter: 42s
+
+status:
+  - Mort
+  - Paralysie
+  - NoKill:
+    onStart: true
+
+inventaire:
+  # Tout le monde en a un au départ, sera nommé Portefeuille_Bernard, Portefeuille_Jach
+  -"Portefeuille de %s"
+
+espaces:
+  "Cabine du capitaine":
+    - "Clés du bateau": 12
+    - "Carte grise"
+
+espacesPersos:
+  # Un espace chacun, appelé Chambre_Jach, Chambre_Bernard
+  "Chambre de %s":
+    - "Manteau de %s"
+
+
+joueurs:
+  Bernard:
+    actions:
+      DominerLeMonde: 42s
+    inventaire:
+      - "JuL'IA"
+      - "MasterKey"
+    espacePerso:
+      "Chambre de Bernard":
+        - "Pipi"
+  
+  Jach:
+    actions:
+      Python: 2h15m
+    status:
+      - "Rage du normalien"
+    inventaire:
+      - "PB ENS"
+    espacePerso:
+      - "Guide Richard" 
+      # Par défaut, se place dans le seul espace personnel (Si il y en a deux, pas bon)
